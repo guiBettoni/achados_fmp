@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Microsoft Fluent Design Dark Palette -->
+    <color name="fluent_blue_primary">#2886DE</color>
+    <color name="fluent_blue_dark">#60A5FA</color>
+    <color name="fluent_blue_light">#1D4ED8</color>
+    <color name="fluent_blue_tint">#1B3353</color>
+    <color name="fluent_blue_pressed">#1E40AF</color>
+
+    <!-- Surfaces & Backgrounds -->
+    <color name="fluent_background">#121212</color>
+    <color name="fluent_surface">#1E1E1E</color>
+    <color name="fluent_surface_variant">#282828</color>
+    <color name="fluent_divider">#333333</color>
+    <color name="fluent_border">#3D3D3D</color>
+
+    <!-- Text Colors -->
+    <color name="fluent_text_primary">#FFFFFF</color>
+    <color name="fluent_text_secondary">#B0B0B0</color>
+    <color name="fluent_text_tertiary">#787878</color>
+    <color name="fluent_text_white">#FFFFFF</color>
+
+    <!-- Status Accents -->
+    <color name="fluent_status_lost_bg">#3E3214</color>
+    <color name="fluent_status_lost_text">#FAD968</color>
+    <color name="fluent_status_found_bg">#2C2C2C</color>
+    <color name="fluent_status_found_text">#E0E0E0</color>
+    <color name="fluent_status_pickup_bg">#18324F</color>
+    <color name="fluent_status_pickup_text">#60A5FA</color>
+    <color name="fluent_status_delivered_bg">#143820</color>
+    <color name="fluent_status_delivered_text">#6EE7B7</color>
+
+    <color name="fluent_danger">#F87171</color>
+    <color name="fluent_danger_bg">#451A1A</color>
+
+    <!-- Common references -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

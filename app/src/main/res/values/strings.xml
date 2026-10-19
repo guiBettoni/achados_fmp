@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Achados da FMP</string>
+    <string name="institution_name">Faculdade Municipal de Palhoça</string>
+    <string name="app_subtitle">Central de Achados e Perdidos no Campus</string>
+    <string name="app_motto">Conectando objetos perdidos aos seus legítimos donos</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Início</string>
+    <string name="nav_all_items">Achados</string>
+    <string name="nav_register">Cadastrar</string>
+    <string name="nav_my_items">Meus Registros</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Authentication -->
+    <string name="login_title">Bem-vindo ao Achados da FMP</string>
+    <string name="login_subtitle">Faça login com seu e-mail institucional ou acesse como visitante do campus.</string>
+    <string name="email_label">E-mail institucional</string>
+    <string name="email_hint">aluno@[PREENCHER: domínio institucional]</string>
+    <string name="password_label">Senha</string>
+    <string name="password_hint">••••••••</string>
+    <string name="btn_login">Entrar</string>
+    <string name="btn_google_signin">Continuar com Google Acadêmico</string>
+    <string name="btn_guest_mode">Explorar como Visitante / Comunidade</string>
+    <string name="login_disclaimer">Ambiente seguro com conformidade às regras acadêmicas da FMP.</string>
+
+    <!-- Home -->
+    <string name="search_hint">Buscar objetos (ex: mochila, chave, fone...)</string>
+    <string name="categories_title">Categorias</string>
+    <string name="recent_found_title">Achados Recentes no Campus</string>
+    <string name="see_all">Ver todos</string>
+    <string name="quick_report_title">Perdeu ou encontrou algo?</string>
+    <string name="quick_report_desc">Registre sua ocorrência para facilitar a identificação e retirada segura.</string>
+    <string name="btn_report_now">Registrar agora</string>
+    <string name="stats_active_items">Itens no acervo</string>
+    <string name="stats_returned_items">Objetos devolvidos</string>
+
+    <!-- Categories -->
+    <string name="cat_all">Todos</string>
+    <string name="cat_documents">Documentos e Cartões</string>
+    <string name="cat_electronics">Eletrônicos</string>
+    <string name="cat_keys">Chaves</string>
+    <string name="cat_stationery">Material Escolar e Livros</string>
+    <string name="cat_clothing">Roupas e Agasalhos</string>
+    <string name="cat_bottles">Garrafas e Copos</string>
+    <string name="cat_accessories">Acessórios</string>
+    <string name="cat_other">Outros Objetos</string>
+
+    <!-- Status -->
+    <string name="status_lost">Procura-se</string>
+    <string name="status_found">Aguardando o dono</string>
+    <string name="status_awaiting_pickup">Aguardando o dono</string>
+    <string name="status_delivered">Devolvido</string>
+
+    <!-- Details -->
+    <string name="item_details_title">Detalhes do Objeto</string>
+    <string name="item_location_label">Local no Campus:</string>
+    <string name="item_date_label">Data do Registro:</string>
+    <string name="item_status_label">Status Atual:</string>
+    <string name="item_category_label">Categoria:</string>
+    <string name="item_description_title">Descrição Pública</string>
+    <string name="security_notice_title">Aviso de Segurança e Devolução</string>
+    <string name="security_notice_body">Por motivos de segurança e para evitar fraudes, detalhes específicos (como números de série, marcas secretas ou conteúdo interno de carteiras/pastas) não são divulgados publicamente. A comprovação de propriedade deve ser realizada presencialmente na Secretaria Acadêmica da FMP mediante documento com foto.</string>
+    <string name="btn_claim_item">Como Resgatar este Objeto</string>
+    <string name="btn_share_item">Compartilhar Informação</string>
+    <string name="pickup_instructions_title">Instruções de Resgate Presencial</string>
+    <string name="pickup_location_desc">Central de Atendimento / Secretaria Acadêmica\n[PREENCHER: local da Secretaria]\n[PREENCHER: horário de atendimento]</string>
+
+    <!-- Registration -->
+    <string name="register_title">Registrar Ocorrência</string>
+    <string name="question_what_happened">O que aconteceu?</string>
+    <string name="option_lost">Perdi um objeto</string>
+    <string name="option_lost_desc">Cadastre o que você perdeu nas dependências da FMP</string>
+    <string name="option_found">Encontrei um objeto</string>
+    <string name="option_found_desc">Cadastre um item que você localizou no campus</string>
+    <string name="field_item_title">Nome ou Identificação Geral</string>
+    <string name="field_item_title_hint">Ex: Estojo azul com zíper, Carteira preta</string>
+    <string name="field_category">Categoria</string>
+    <string name="field_date">Data da Ocorrência</string>
+    <string name="field_location">Local no Campus da FMP</string>
+    <string name="field_location_hint">Ex: Bloco A - Sala 104, Cantina, Biblioteca</string>
+    <string name="field_description">Descrição Pública Geral</string>
+    <string name="field_description_hint">Descreva características gerais. NÃO informe senhas ou itens de valor exato.</string>
+    <string name="field_contact">Ponto de Entrega / Responsável</string>
+    <string name="field_contact_hint">Ex: Entregue na Secretaria do Bloco Central</string>
+    <string name="btn_submit_occurrence">Salvar Registro</string>
+    <string name="success_registered">Registro cadastrado com sucesso!</string>
+    <string name="error_required_fields">Por favor, preencha todos os campos obrigatórios.</string>
+
+    <!-- My Items -->
+    <string name="my_items_title">Meus Registros</string>
+    <string name="tab_lost">Que perdi</string>
+    <string name="tab_found">Que achei</string>
+    <string name="empty_my_items">Nenhum registro cadastrado por você até o momento.</string>
+    <string name="empty_items_hint">Quando você registrar um objeto perdido ou encontrado, ele aparecerá aqui com seu status atualizado.</string>
+    <string name="btn_mark_resolved">Marcar como Resolvido</string>
+
+    <!-- Filters Dialog -->
+    <string name="filter_title">Filtrar Achados</string>
+    <string name="filter_status">Status</string>
+    <string name="filter_category">Categoria</string>
+    <string name="btn_apply_filters">Aplicar Filtros</string>
+    <string name="btn_clear_filters">Limpar</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">Perfil do Usuário</string>
+    <string name="user_default_name">Guilherme Bettoni</string>
+    <string name="user_default_email">guilherme@[PREENCHER: domínio institucional]</string>
+    <string name="user_default_role">Estudante da FMP • Matrícula [PREENCHER: matrícula]</string>
+    <string name="section_academic">Dados Institucionais</string>
+    <string name="section_preferences">Configurações do Aplicativo</string>
+    <string name="pref_notifications">Notificações de Novos Achados</string>
+    <string name="pref_notifications_desc">Receba avisos quando novos itens forem cadastrados na sua categoria</string>
+    <string name="pref_contact_secretariat">Atendimento Presencial na FMP</string>
+    <string name="pref_contact_secretariat_desc">[PREENCHER: telefone e horário]</string>
+    <string name="pref_privacy">Política de Privacidade</string>
+    <string name="pref_privacy_desc">Proteção de dados e diretrizes de recuperação de objetos</string>
+    <string name="pref_about">Sobre o Achados da FMP</string>
+    <string name="pref_about_desc">Versão 1.0.0 • Faculdade Municipal de Palhoça</string>
+    <string name="btn_logout">Encerrar Sessão</string>
+    <string name="empty_list_title">Nenhum objeto encontrado</string>
+    <string name="empty_list_desc">Tente alterar os termos da busca ou limpar os filtros aplicados.</string>
+</resources>

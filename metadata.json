@@ -1,0 +1,6 @@
+{
+  "name": "Achados da FMP",
+  "description": "Aplicativo institucional da Faculdade Municipal de Palhoça para registro e consulta de objetos perdidos e achados com Microsoft Fluent Design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

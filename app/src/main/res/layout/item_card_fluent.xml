@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardItem"
+    style="@style/Widget.Fluent.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp"
+    app:strokeColor="@color/fluent_divider"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Thumbnail Image (64x64 with rounded corners) -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivItemThumb"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/fluent_surface_variant"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thumb_earbuds"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvItemTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textColor="@color/fluent_text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ivChevron"
+            app:layout_constraintStart_toEndOf="@+id/ivItemThumb"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fone de ouvido" />
+
+        <!-- Category Pill Badge -->
+        <TextView
+            android:id="@+id/tvItemCategoryPill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_badge_pickup"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/fluent_blue_primary"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/ivItemThumb"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTitle"
+            tools:ignore="SmallSp"
+            tools:text="Eletrônicos" />
+
+        <!-- Date & Location Row -->
+        <LinearLayout
+            android:id="@+id/layoutDateLoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/ivChevron"
+            app:layout_constraintStart_toEndOf="@+id/ivItemThumb"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemCategoryPill">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/tvItemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/fluent_text_secondary"
+                android:textSize="11sp"
+                tools:ignore="SmallSp"
+                tools:text="11/09/2026" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="•"
+                android:textColor="@color/fluent_text_tertiary"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tvItemLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/fluent_text_secondary"
+                android:textSize="11sp"
+                tools:ignore="SmallSp"
+                tools:text="Laboratório 4" />
+        </LinearLayout>
+
+        <!-- Office & Status Row -->
+        <LinearLayout
+            android:id="@+id/layoutOfficeStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/ivChevron"
+            app:layout_constraintStart_toEndOf="@+id/ivItemThumb"
+            app:layout_constraintTop_toBottomOf="@+id/layoutDateLoc">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_building" />
+
+            <TextView
+                android:id="@+id/tvItemHolding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/fluent_text_secondary"
+                android:textSize="11sp"
+                tools:ignore="SmallSp"
+                tools:text="Secretaria" />
+
+            <ImageView
+                android:id="@+id/ivItemStatusIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_clock" />
+
+            <TextView
+                android:id="@+id/tvItemStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/fluent_blue_primary"
+                android:textSize="11sp"
+                tools:ignore="SmallSp"
+                tools:text="Aguardando retirada" />
+        </LinearLayout>
+
+        <!-- Chevron arrow on the right -->
+        <ImageView
+            android:id="@+id/ivChevron"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_chevron_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
